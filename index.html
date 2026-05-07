@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celine Keles — UX Portfolio</title>
+  <meta name="description"
+    content="UX Design portfolio of Celine Keles — showcasing research, design process, and user-centered thinking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="nav" class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">CK</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#final">Final Design</a></li>
+        <li><a href="#contribution">Contribution</a></li>
+        <li><a href="#reflection">Reflection</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-label">UX Case Study</p>
+      <h1 class="hero-title"><span class="vanguard-brand">Vanguard</span> Year in Review</h1>
+      <p class="hero-subtitle">Working with Vanguard to transform the Vanguard Year in Review into a more encompassing
+        and beginner friendly financial platform, that remains accessible to revisit and understand.</p>
+      <div class="hero-meta">
+        <span class="meta-chip">UX Research</span>
+        <span class="meta-chip">UI Design</span>
+        <span class="meta-chip">Prototyping</span>
+      </div>
+      <a href="#overview" class="hero-cta">View Case Study</a>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== 1. PROJECT OVERVIEW ========== -->
+    <section id="overview" class="section">
+      <div class="section-inner">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Project Overview</h2>
+        <div class="overview-grid">
+          <article class="overview-card">
+            <div class="overview-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+            </div>
+            <h3>The Challenge</h3>
+            <p>Navigation is limited to a singular desired flow. Some users just want to see the numbers.
+              Some just want to know if they’re on track to retire. The original design has a clearly defined
+              desired flow that limits a users ability to use the tool to fit their investing style. With a customizable
+              platform like the digital advisor, there are users who just want to see the numbers behind their summary.
+              And there are some who want to keep it simple: are they are on track to retire.
+            </p>
+          </article>
+          <article class="overview-card overview-card--audience">
+            <div class="overview-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>The Audience</h3>
+
+            <div class="audience-demographics">
+              <div class="demo-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>Age 50+</span>
+              </div>
+              <div class="demo-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                <span>Average to low tech-literacy</span>
+              </div>
+              <div class="demo-tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+                <span>In or nearing retirement</span>
+              </div>
+            </div>
+
+            <div class="audience-split">
+              <div class="audience-participants">
+                <h4 class="audience-section-title">Participants</h4>
+                <div class="persona-grid">
+
+                  <!-- Participant 1: Basic Flow -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--3">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">Participant 1</h4>
+                      <span class="persona-flow persona-flow--basic">Basic Flow</span>
+                    </div>
+                    <p class="persona-desc">55 years old female, not retired yet, Sonographer at Regional Hospital.</p>
+                    <ul class="persona-traits">
+                      <li>Needs more guidance for reading finances</li>
+                      <li>Wants more simplified views and insights</li>
+                      <li>Values reassurance over raw data</li>
+                    </ul>
+                  </div>
+
+                  <!-- Participant 2: Advanced Flow -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--1">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">Participant 2</h4>
+                      <span class="persona-flow persona-flow--advanced">Advanced Flow</span>
+                    </div>
+                    <p class="persona-desc">70 year old male, retired but used to work as a SWE at an investment firm.
+                    </p>
+                    <ul class="persona-traits">
+                      <li>Prefers visual data (charts &amp; graphs)</li>
+                      <li>Wants context, not just raw figures</li>
+                      <li>Compares year-over-year performance</li>
+                    </ul>
+                  </div>
+
+                  <!-- Participant 3: Basic Flow -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--4">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">Participant 3</h4>
+                      <span class="persona-flow persona-flow--basic">Basic Flow</span>
+                    </div>
+                    <p class="persona-desc">58 year old male, not retired, works as an Interventional Radiologist.</p>
+                    <ul class="persona-traits">
+                      <li>Low financial literacy</li>
+                      <li>Easily overwhelmed by too much data</li>
+                      <li>Wants a clear yes/no on retirement readiness</li>
+                    </ul>
+                  </div>
+
+                  <!-- Participant 4: Advanced Flow -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--2">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">Participant 4</h4>
+                      <span class="persona-flow persona-flow--advanced">Advanced Flow</span>
+                    </div>
+                    <p class="persona-desc">56 year old female, non retired, Data Analyst at Retirement Company.</p>
+                    <ul class="persona-traits">
+                      <li>Wants specific numbers &amp; percentages</li>
+                      <li>Comfortable with financial jargon</li>
+                      <li>Reads every line of their statements</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="audience-personas">
+                <h4 class="audience-section-title">Personas</h4>
+                <div class="persona-grid">
+
+                  <!-- Persona 1: Basic Flow -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--3">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">The Simplicity Seeker</h4>
+                      <span class="persona-flow persona-flow--basic">Basic Flow</span>
+                    </div>
+                    <p class="persona-desc">A working professional who doesn't have the time or desire to learn
+                      financial jargon. They check their account occasionally and want a friendly, digestible summary
+                      that reassures them without requiring deep analysis.</p>
+                    <ul class="persona-traits">
+                      <li>Advisor-dependent, checks in periodically</li>
+                      <li>Prefers plain-language explanations</li>
+                      <li>Needs simple, clear insights</li>
+                    </ul>
+                  </div>
+
+                  <!-- Persona 2: Advanced Flow (User's custom text) -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--1">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">The Analytical Expert</h4>
+                      <span class="persona-flow persona-flow--advanced">Advanced Flow</span>
+                    </div>
+                    <p class="persona-desc">A semi-retired professional who tracks market trends. Very serious about his
+                      retirement plan. Since his early 20s, he has focused on staying ahead in savings and investment.
+                      He appreciates charts but wants the Year in Review to contextualize data.</p>
+                    <ul class="persona-traits">
+                      <li>Wants detailed numerical breakdowns</li>
+                      <li>Financially educated &amp; data-driven</li>
+                      <li>Comfortable interpreting charts &amp; metrics</li>
+                    </ul>
+                  </div>
+
+                  <!-- Persona 3: Basic Flow -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--4">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">The Anxious Retiree</h4>
+                      <span class="persona-flow persona-flow--basic">Basic Flow</span>
+                    </div>
+                    <p class="persona-desc">Recently retired and new to reviewing investment summaries on their own.
+                      They feel overwhelmed by financial terminology and just want to know: <em>am I on track?</em>
+                      Simplicity is everything.</p>
+                    <ul class="persona-traits">
+                      <li>Easily overwhelmed by too much data</li>
+                      <li>Wants a clear yes/no on readiness</li>
+                      <li>Avoids complex tables</li>
+                    </ul>
+                  </div>
+
+                  <!-- Persona 4: Advanced Flow -->
+                  <div class="persona-card">
+                    <div class="persona-avatar persona-avatar--2">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                    </div>
+                    <div class="persona-info">
+                      <h4 class="persona-name">The Hands-on Planner</h4>
+                      <span class="persona-flow persona-flow--advanced">Advanced Flow</span>
+                    </div>
+                    <p class="persona-desc">Nearing retirement and actively managing their portfolio transition. They
+                      want granular, numerical data — returns by asset class, benchmark comparisons, and fee breakdowns.
+                    </p>
+                    <ul class="persona-traits">
+                      <li>Compares year-over-year performance</li>
+                      <li>Wants context for market shifts</li>
+                      <li>Analyzes asset allocation</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <p class="audience-unique">What makes this design unique is the identification of these two distinct user
+              types — rather than forcing everyone through the same flow, we tailored the experience to match each
+              group’s comfort level and goals.</p>
+          </article>
+          <article class="overview-card">
+            <div class="overview-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <h3>The Goal</h3>
+            <p>What was the desired outcome of the redesign? What does success look like?</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 2. RESEARCH & INSIGHTS ========== -->
+    <section id="research" class="section section--alt">
+      <div class="section-inner">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Research &amp; Insights</h2>
+        <p class="section-lead">Focus on what mattered — not everything we did.</p>
+
+        <div class="insights-grid">
+          <div class="insight-card">
+            <span class="insight-label">Usability Testing</span>
+            <h3>Key Findings</h3>
+            <p>Positive Findings: Users liked the font and color scheme of the UI and thought
+              it was easy to read and consistent throughout webpage, specifically the homepage.
+              The users enjoyed the “Next Steps” section after the Year in Review section
+
+              Minor Findings: Some users felt that information was not easily
+              accessible. We recommend having frequently referenced information remain the same between slides. The year
+              in review had
+              pages that users expressed were unnecessary. One point the user clicks “start review” only to be directed
+              to
+              another page where they have to click the same button. Some users thought the planning for 2026 section
+              was too
+              early especially since they were still scrolling through their 2025 review
+
+              Major Problems: Multiple users expressed that they had major difficulties with scrolling through the
+              prototype
+              because there was no scroll bar. Two finger scrolling on a laptop did not seem so be intuitive for them,
+              and this presented a repeated barrier during usability tests. Uneven info distribution with some slides
+              were dense
+              with information, while others were relatively empty. This prevented the year-in-review experience from
+              flowing
+              as smoothly as it could have
+            </p>
+          </div>
+          <div class="insight-card">
+            <span class="insight-label">Audience Insight</span>
+            <h3>What we included</h3>
+            <p>We focused on how retirement savings would fit into the lives of our personas. What does
+              their day-to-day look like, and what details are important to them. We wanted each persona
+              to have a clearly defined personal relationship with investing.</p>
+          </div>
+          <div class="insight-card insight-card--highlight">
+            <span class="insight-label">Empathy / Persona</span>
+            <h3>How we decided what mattered</h3>
+            <p>We wanted to look at our participants Likert scale results and analyze patterns to make
+              sure we could create cohesive personas. Based on those results we started creating persona
+              notes for any outliers or very grouped results we saw. We also wanted to make sure we were
+              able to encapsulate the main different types of users present. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. STRUCTURE & THINKING ========== -->
+    <section id="structure" class="section">
+      <div class="section-inner">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Structure &amp; Thinking</h2>
+
+        <div class="structure-grid">
+          <div class="structure-item">
+            <div class="structure-item-header">
+              <span class="structure-step">A</span>
+              <h3>Information Architecture</h3>
+            </div>
+            <p>Card sort was done to organize opinions and ideas.</p>
+            <div class="image-wrapper">
+              <img src="images/howmightwe.png" alt="How might we" class="content-image" />
+              <img src="images/howmightwelong.png" alt="How might we long" class="content-image" />
+            </div>
+          </div>
+
+          <div class="structure-item">
+            <div class="structure-item-header">
+              <span class="structure-step">B</span>
+              <h3>User Flows</h3>
+            </div>
+            <p>Walk through the key user flow(s) and why they were designed this way.</p>
+
+            <p>Flow 1</p>
+            <img src="images/flow1.png" alt="User Flow Diagram" class="content-image" />
+            <p>Flow 2 </p>
+            <img src="images/flow2.png" alt="User Flow Diagram" class="content-image" />
+          </div>
+
+          <div class="structure-item structure-item--full">
+            <div class="structure-item-header">
+              <span class="structure-step">C</span>
+              <h3>Thought Process</h3>
+            </div>
+            <div class="decisions-list">
+              <div class="decision">
+                <p>After our disscussion with teamates we did the card sort and from there created two flows
+                  that could be a realistic possibility for our team given the research we had gathered about Vanguard,
+                  its target audience, and our usability test for our participants. We collected all participant
+                  information from
+                  our likert scale questions and quantified them to see where we can have areas of improvment</p>
+                <img src="images/likertscale.png" alt="User Flow Diagram" class="content-image" />
+                <p>
+                  From our findings in the likert scale questions we started to see patterns in terms of what
+                  participants
+                  thought about Vanguard and the things we had observed in the usability tests. From this we began to
+                  draft
+                  our personas and organize our personas based on the information we had gathered from our Likert
+                  scales.
+                  After creating our personas we started to think about how to display the information we had gathered
+                  in a way
+                  that would be most beneficial for our user, so we came up with two distint user flows. </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="structure-item structure-item--full">
+            <div class="structure-item-header">
+              <span class="structure-step">C</span>
+              <h3>Key Decisions</h3>
+            </div>
+            <div class="decisions-list">
+              <div class="decision">
+                <strong>Decision 1:</strong>
+                <p>Our group decided to create our model based on flow 2. While flow 1 provided a less
+                  complect experience for our user, in terms of flow, flow 2 gave the user two pathways, the quick view
+                  and the detailed View
+                  This would allow the user to choose the level of detail they would like in order to view
+                  the information presented to them. The quick view is great for users who are not too knowledgable on
+                  financals
+                  or get overwhelmed easier. The detailed view is great for users who are more knowledgable or want more
+                  information.
+                </p>
+              </div>
+              <div class="decision">
+                <strong>Decision 2:</strong>
+                <p>Removing generic images from the year-in-review design, agreeing they would not be missed
+                  and would allow for more information to be included. </p>
+              </div>
+              <div class="decision">
+                <strong>Decision 3:</strong>
+                <p>Changing the “Go to Checklist” option in the initial po-pup, because it doesn’t provide meaningful
+                  context—especially for first-time users.
+                  It drops them into a feature without explaining what the year in review is, why it matters, or how to
+                  navigate it. This can create confusion and
+                  reduce engagement early on. So, we decided to do a “Skip to Summary” option which is much more
+                  intentional. It clearly communicates where the
+                  user is going and sets expectations for what they’ll see. More importantly, it frames the year in
+                  review as something users can return to over time, rather than a one-time interaction.
+                </p>
+              </div>
+              <div class="decision">
+                <strong>Decision 4:</strong>
+                <p>Making the new year in review revistable by creating an extensive summary of the year, which you can
+                  go to by clicking our new "Skip to Summary" page
+                  while making sure the year in review stays acessesable permenently instead of disapearing after a
+                  month of its launch in the new year.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. DESIGN PROCESS ========== -->
+    <section id="process" class="section section--alt">
+      <div class="section-inner">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Design Process</h2>
+
+        <div class="process-timeline">
+          <div class="process-step">
+            <div class="process-step-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="process-step-content">
+              <h3>Vanguard Office Hours</h3>
+              <p>After another meeting with my team we reorganized our cards based off of functionality of our flow. I
+                met up with Steve Schang, Rachel Chung,
+                both employees from the design team at Vanguard, to discuss
+                our groups ideas on the potential flows
+                and design pathways we could take. With their input and advice we continued working on flow 2 to create
+                a working prototype based off of the
+                components they gave us in Figma.
+              </p>
+              <img src="images/cardinfo.png" style="width: 500px; height: auto;" alt="User Flow Diagram"
+                class="content-image" />
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="process-step-content">
+              <h3>Incorporating our Organized Cards into Flow 2</h3>
+              <p>Next, looking at our cards and chosen flow, we annoted our flow 2 to include where we wanted which
+                section of the new year
+                in review. This processes helped make it easier for my team in terms of organization and making sure we
+                were including all
+                nesesary elements.
+              </p>
+              <img src="images/flow2.png" style="width: 500px; height: auto;" alt="User Flow Diagram"
+                class="content-image" />
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="process-step-content">
+              <h3>Iterations and Final Designs</h3>
+              <p>Once we started creating the high-fidelity prototypes we started organizing them into flows and
+                organized
+                meetings with our previous usability testers to gather there input on previous vanguard year in review
+                vs. the new year in review</p>
+              <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                  <p style="margin-bottom: 8px; font-weight: 600;">Old</p>
+                  <img src="images/old.png" style="width: 320px; height: auto;" alt="User Flow Diagram"
+                    class="content-image" />
+                </div>
+                <div style="font-size: 48px; color: #555;">&#8594;</div>
+                <div style="text-align: center;">
+                  <p style="margin-bottom: 8px; font-weight: 600;">New</p>
+                  <img src="images/new.png" style="width: 320px; height: auto;" alt="User Flow Diagram"
+                    class="content-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. FINAL DESIGN ========== -->
+    <section id="final" class="section">
+      <div class="section-inner">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Final Design</h2>
+        <p class="section-lead">High-fidelity mockups and prototype highlights.</p>
+
+        <div class="final-gallery">
+          <div class="gallery-item gallery-item--large">
+            <div class="image-placeholder image-placeholder--dark" data-label="Hero / Key Screen">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Add your key screen here</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="image-placeholder image-placeholder--dark" data-label="Screen 2">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Add image</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="image-placeholder image-placeholder--dark" data-label="Screen 3">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Add image</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="image-placeholder image-placeholder--dark" data-label="Screen 4">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+              <span>Add image</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="prototype-callout">
+          <div class="prototype-callout-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+          </div>
+          <div>
+            <h3>Interactive Prototype</h3>
+            <p>Experience the full flow — <a href="#" class="inline-link">view the Figma prototype →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. YOUR CONTRIBUTION ========== -->
+    <section id="contribution" class="section section--alt">
+      <div class="section-inner">
+        <span class="section-number">06</span>
+        <h2 class="section-title">My Contribution</h2>
+
+        <div class="contribution-layout">
+          <div class="contribution-block">
+            <h3>What the Team Accomplished</h3>
+            <ul class="contribution-list">
+              <li>Describe what the group achieved together — the scope of work, deliverables, and overall outcome.</li>
+              <li>Another team accomplishment.</li>
+              <li>A third accomplishment or deliverable.</li>
+            </ul>
+          </div>
+          <div class="contribution-block contribution-block--highlight">
+            <h3>What I Specifically Did</h3>
+            <ul class="contribution-list">
+              <li>Your direct contribution — what you owned, led, or drove forward.</li>
+              <li>Another specific thing you were responsible for.</li>
+              <li>A third individual contribution that demonstrates your skills.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. REFLECTION ========== -->
+    <section id="reflection" class="section">
+      <div class="section-inner">
+        <span class="section-number">07</span>
+        <h2 class="section-title">Reflection</h2>
+
+        <div class="reflection-content">
+          <div class="reflection-block">
+            <h3>What I Learned</h3>
+            <p>Write about what this project taught you — about UX process, collaboration, users, or yourself as a
+              designer. Be specific and honest.</p>
+          </div>
+          <div class="reflection-block">
+            <h3>What I'd Improve</h3>
+            <p>If you could do it again, what would you change? Maybe more testing rounds, better stakeholder
+              communication, or a different approach to a specific problem.</p>
+          </div>
+          <div class="reflection-block">
+            <h3>What Surprised Me</h3>
+            <p>Was there an unexpected finding, a user behavior you didn't anticipate, or a process insight that caught
+              you off guard?</p>
+          </div>
+          <div class="reflection-block">
+            <h3>How This Shaped My Thinking</h3>
+            <p>How has this project influenced the way you approach UX design? What principles or habits did you take
+              away from it?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Celine Keles</p>
+      <p class="footer-tagline">UX Designer · Researcher · Problem Solver</p>
+      <div class="footer-links">
+        <a href="mailto:your@email.com" class="footer-link">Email</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="#" class="footer-link">Resume</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Celine Keles. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
